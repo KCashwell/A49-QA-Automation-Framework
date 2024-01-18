@@ -5,11 +5,12 @@ import org.testng.annotations.Test;
 
 public class ProfileTests extends BaseTest {
     @Test
-    public void changeProfileName() throws InterruptedException {
+    public void addSongToPlaylist() throws InterruptedException {
+
+        String expectedSongAddedMessage = "Added 1 song into \"Homework17.\"";
 
         navigateToPage();
-
-        provideEmail("demo@class.com");
+        provideEmail("katelyn.cashwell@testpro.io");
         providePassword("te$t$tudent");
         clickSubmit();
 
